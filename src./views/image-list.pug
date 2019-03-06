@@ -1,0 +1,14 @@
+extends ./layout.pug
+block main
+  .wrapper-form-block
+    .__wrapper-block-form
+      h1 Загрузка изображения на node.js
+      h3= status
+      h3= fileName
+      img(src= "/uploads/" + fileUrl)
+      form
+        a.button(href="/uploads/" + fileUrl download title="Скачать файл") 
+          .fa.fa-download 
+          | Скачать изображение
+      br
+      a.link(href="/"  title="Загрузить новый файл") Загрузить новое изображение ?

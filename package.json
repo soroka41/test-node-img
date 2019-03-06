@@ -1,0 +1,26 @@
+{
+  "name": "test-node-img",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/app.js"
+  },
+  "author": "Soroka Vitaly",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "gm": "^1.23.1",
+    "morgan": "^1.9.1",
+    "pug": "^2.0.3",
+    "sharp": "^0.21.3",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "body-parser": "^1.18.3",
+    "http": "0.0.0",
+    "multer": "^1.4.1",
+    "nodemon": "^1.18.10",
+    "path": "^0.12.7"
+  }
+}
