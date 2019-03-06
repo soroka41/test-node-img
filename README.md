@@ -1,7 +1,7 @@
 # test-node-img
 -----
-npm install
+>npm install
 -----
-npm start
+>npm start
 ------
-http://localhost:8080/
+>http://localhost:8080/
