@@ -1,7 +1,7 @@
-const fs = require('fs');
-const sharp = require('sharp');
-const uuidv4 = require('uuid/v4');
-const path = require('path');
+var fs = require('fs'),
+  sharp = require('sharp'),
+  uuidv4 = require('uuid/v4'),
+  path = require('path');
 
 
 

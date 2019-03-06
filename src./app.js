@@ -1,15 +1,15 @@
-const express = require('express');
-const path = require('path');
-const bodyParser = require('body-parser');
-const logger = require('morgan');
-const multer = require('multer');
-const upload = multer({limit: {
+const express = require('express'),
+  path = require('path'),
+  bodyParser = require('body-parser'),
+  logger = require('morgan'),
+  multer = require('multer'),
+  upload = multer({limit: {
   fileSize: 1024 * 1024 * 10,
-}});
-const Resize = require('./resize');
+}}),
+  Resize = require('./resize'),
+  app = express(),
+  port = process.env.PORT || 8080;
 
-const app = express();
-const port = process.env.PORT || 8080;
 app.use(bodyParser());
 
 app.use(logger('dev')); 
@@ -26,6 +26,7 @@ app.get('/', async function (req, res) {
 app.get('/image-list', async function (req, res) {
   await res.redirect('/')
 })
+
 
 app.post('/image-list', upload.single('image'), async function (req, res) {
   if (req.file) {
